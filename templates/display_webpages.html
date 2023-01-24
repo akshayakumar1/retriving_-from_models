@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>All_Webpages</h1>
+        <table border="3px">
+            <tr>
+                <th>Topics</th>
+                <th>name</th>
+                <th>urls</th>
+            </tr>
+                {% for t in webpages_data %}
+                    <tr>
+                        <td>{{t.topic_name}}</td>
+                        <td>{{t.name}}</td>
+                        <td>{{t.url}}</td>
+                    </tr>
+                {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
